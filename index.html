@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Harish Food's</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class='container-fluid title-card'>
+        <h2>Harish Food's Customer Feedback</h2>
+    </div>
+    <div class="container total-form">
+
+        <h6>Feedback Form</h6>
+        <div class="row">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="firstname">First name</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input class="input-width" type="text" id="firstname" placeholder="First name" required>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="lastname">Last name</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input class="input-width" type="text" id="lastname" placeholder="Last name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label>Gender</label>
+            </div>
+            <div class='col-8 col-md-5'>
+                <input name="gender" type="radio" id="gender-male" value="Male" required><label
+                    for="gender-male">Male</label><br>
+                <input name="gender" type="radio" id="gender-female" value="Female" required><label
+                    for="gender-female">Female</label><br>
+                <input name="gender" type="radio" id="gender-others" value="Others" required><label
+                    for="gender-others">Others</label>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label>Favorite Food</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input type="checkbox" name="favFood" value="Briyani" id="fav-1"><label for="fav-1">Briyani</label> <br>
+                <input type="checkbox" name="favFood" value="Bun Parota" id="fav-2"><label for="fav-2">Bun
+                    parota</label><br>
+                <input type="checkbox" name="favFood" value="Chapati" id="fav-3"><label for="fav-3">Chapati</label><br>
+                <input type="checkbox" name="favFood" value="Dosa" id="fav-4"><label for="fav-4">Dosa</label><br>
+                <input type="checkbox" name="favFood" value="Idly" id="fav-5"><label for="fav-5">Idly</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="address">Address</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <textarea class="input-width" name="address" id="address" cols="30" rows="5"
+                    placeholder="Address" required></textarea>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="state">State</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input class="input-width" type="text" placeholder="State" id="state" required>
+
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="country">Country</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input class="input-width" type="text" placeholder="Country" id="country" required>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-4 offset-md-2 col-md-3">
+                <label for="Pincode">Pincode</label>
+            </div>
+            <div class="col-8 col-md-5">
+                <input class="input-width" type="number" placeholder="Pincode" id="Pincode" required>
+            </div>
+        </div>
+        <div class="submit-btn">
+            <button onclick="getDatafromFields()">Submit</button>
+        </div>
+        
+
+    </div>
+
+    <div class="table-container">
+        <table class="table table-striped table-success table-bordered">
+            <thead>
+            
+                <tr >
+                    <th scope="col">S.No</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Favorite Food</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Country</th>
+                    <th scope="col">Pincode</th>
+                </tr>
+                </div>
+            </thead>
+            <tbody id="table-body">
+            
+            
+            </tbody>
+        </table>
+    </div>
+<script src="script.js"></script>
+    
+</body>
+
+</html>

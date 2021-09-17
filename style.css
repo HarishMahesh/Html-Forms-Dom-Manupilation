@@ -1,0 +1,114 @@
+.title-card{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #89f3b621;
+}
+h2{
+    font-size: 15px;
+    color: #24c087fc;
+}
+.title-card + div{
+    padding: 0;
+}
+
+td{
+     font-family: 'Ubuntu', sans-serif;
+        font-size: 10px;
+     text-align: left;
+ }
+
+ th{
+     font-size: 10px;
+     font-family: 'Ubuntu', sans-serif;
+     text-align: center;
+ 
+ }
+
+
+ .table-container{
+     overflow: auto;
+     width: 95%;
+     margin-left: auto;
+     margin-right: auto;
+   
+     
+ }
+
+ 
+
+ .input-width{
+     width: 100%;
+ }
+ .total-form{
+     background-color: #65c2ca1a;
+     padding-top: 12px;
+     padding-bottom: 12px;
+     /* position: sticky;
+     top: 7px; */
+     bottom: 15px;
+     height: 250px;
+     overflow-y: scroll;
+        margin-bottom: 20px;
+ }
+
+ .total-form>h6{
+     text-align: center;
+ }
+
+ .total-form > div{
+     margin-bottom: 10px;
+ }
+
+label{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+ @media(min-width:770px)
+ {
+     td{
+         font-size: 12px;
+     }
+     th{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .input-width{
+        width: 70%;
+    }
+   
+ }
+ @media(min-width:990px)
+ {
+     td{
+         font-size: 15px;
+     }
+     th{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 25px;
+    }
+   
+    h6{
+        font-size: 20px;
+    }
+ }
+
+
+
